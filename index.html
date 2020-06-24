@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/swiper.min.js"></script>
+	<style type="text/css">
+    .conter {
+	width: 1240px;
+	height: 900px;
+	border: 1px solid darkblue;
+	min-width: 1240px;
+	margin: 0 auto;
+	margin-top: 6%;
+}
+.conter_t{
+	width: 1180px;
+	height: 64px;
+	/*border: 1px solid saddlebrown;*/
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.conter_t span{
+	font-size: 44px;
+	color: #333333;
+}
+.conter_btn{
+	width: 166px;
+	height: 46px;
+	/*border: 1px solid salmon;*/
+	margin: 0 auto;
+}
+.conter_btn input{
+	width: 166px;
+	height: 46px;
+	background:dodgerblue;
+	border: none;
+}
+	</style>
+	<body>
+		<!--头部-->
+		<div class="header">	
+			<div class="header_c">
+				<div class="header_logo">
+					<img src="img/logo.png" />
+				</div>
+				<div class="hea_nav">
+					<ul>
+						<li><a href="#" style="border-bottom: 2px solid black; font-weight: 600;">首页</a></li>
+						<li><a href="#">平台优势</a></li>
+						<li><a href="#">广告类型</a></li>
+						<li><a href="#">成功案例</a></li>
+						<li><a href="#">公益推广</a></li>
+						<li><a href="#">了解更多</a></li>
+					</ul>
+				</div>
+				<div class="hea_phone">
+					<p><a href="#">400-800-8888</a></p>
+				</div>
+				<div class="hea_btn">
+					<input type="button" value="免费注册" />
+				</div>
+			</div>
+		</div>
+		<!--轮播图-->
+		<div class="lunbo">
+		  <div class="swiper-container">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide"><img src="img/lunbo1.jpg"/></div>
+		      <div class="swiper-slide"><img src="img/lunbo2.jpg"/></div>
+		      <div class="swiper-slide"><img src="img/lunbo3.jpg"/></div>
+		    </div>
+		    <div class="swiper-pagination"></div>
+		  </div>	
+		</div>
+		<!--内容-->
+		<div class="banner">
+			<div class="banner_center">
+				<div class="banner_l">
+					<span>856,000家企业正在使用百度营销</span>
+				</div>
+				<div class="banner_c">
+					<p>400-800-8888</p>
+					<span>专属咨询顾问随时为您服务</span>
+				</div>
+				<div class="banner_r">
+					<input type="button" value="免费注册" />
+					<span>惊喜1+1开户好礼等你来拿</span>
+				</div>
+			</div>
+		</div>
+		<div class="conter">
+			<div class="conter_t">
+				<span>选择百度营销的理由</span>
+			</div>
+			<div class="conter_btn">
+				<input type="button" value="免费注册" />
+				</div>
+		</div>
+	</body>
+	<script>
+    var swiper = new Swiper('.swiper-container', {
+    	loop : true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable :true,    
+      },
+      autoplay: {
+    delay: 3000,
+    },
+    });
+  </script>
+</html>
