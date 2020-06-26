@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		/*td{
+			border: 1px solid darkblue;
+		}*/
+		td { border: 3px ridge rgb(218, 217, 217);
+	</style>
+	<body>
+		<script>
+			document.write("<table>");
+			for(var row=1;row<10;row++){
+				document.write("<tr>");
+				for(col=1;col<=row;col++){
+					document.write("<td>"+col+"x"+row+"="+col*row+"</td>");
+				}
+				
+				document.write("</tr>");
+			}
+			document.write("</table>");
+		</script>
+	</body>
+</html>
